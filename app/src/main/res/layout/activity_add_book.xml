@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="429dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/editTextTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Título" />
+
+
+        <EditText
+            android:id="@+id/editTextAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Autor" />
+
+        <EditText
+            android:id="@+id/editTextPublicationDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fecha de Publicación" />
+
+
+        <EditText
+            android:id="@+id/editTextBinding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Encuadernación" />
+
+
+        <EditText
+            android:id="@+id/editTextPages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Número de Hojas" />
+
+        <EditText
+            android:id="@+id/editTextUrlImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Url de la imagen"
+            android:textIsSelectable="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Genero" />
+
+        <Button
+            android:id="@+id/buttonAddBook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Agregar Libro" />
+
+        <Button
+            android:id="@+id/buttonViewBooks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ver libros" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="200dp">
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        style="@style/bottom_navigation_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_navigation_menu"/>
+
+
+</RelativeLayout>

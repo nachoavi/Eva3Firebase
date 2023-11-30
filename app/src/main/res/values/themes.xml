@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Eva3Firebase" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/colorActive</item>
+    </style>
+
+    <style name="Theme.Eva3Firebase" parent="Base.Theme.Eva3Firebase" />
+    
+    <style name="bottom_navigation_menu">
+        <item name="android:background">@color/colorBackground</item>
+        <item name="itemIconTint">@color/colorIcon</item>
+        <item name="itemTextColor">@color/colorTextActive</item>
+        <item name="itemTextAppearanceInactive">@color/colorTextInactive</item>
+
+    </style>
+    
+</resources>

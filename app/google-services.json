@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "17198372904",
+    "firebase_url": "https://fir-inacap-bc43e-default-rtdb.firebaseio.com",
+    "project_id": "fir-inacap-bc43e",
+    "storage_bucket": "fir-inacap-bc43e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:17198372904:android:8d5e0b4fc48eeb8b4cbd1d",
+        "android_client_info": {
+          "package_name": "com.example.eva3firebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIH528VCTvhZLFvbld_DOS5jYSY9n30as"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:17198372904:android:e7f9cab58151f61c4cbd1d",
+        "android_client_info": {
+          "package_name": "com.example.integracionfirebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIH528VCTvhZLFvbld_DOS5jYSY9n30as"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:padding="16dp">
+
+
+    <EditText
+        android:id="@+id/editTextTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Título"/>
+
+
+    <EditText
+        android:id="@+id/editTextAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Autor"/>
+
+    <EditText
+        android:id="@+id/editTextPublicationDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fecha de Publicación"/>
+
+
+    <EditText
+        android:id="@+id/editTextBinding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Encuadernación"/>
+
+
+    <EditText
+        android:id="@+id/editTextPages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Número de Hojas"/>
+
+    <EditText
+        android:id="@+id/editTextUrlImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textIsSelectable="true"
+        android:hint="Url de la imagen"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Genero"/>
+
+    <Button
+        android:id="@+id/buttonUpdateBook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Actualizar"/>
+
+    <Button
+        android:id="@+id/buttonViewBooks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ver libros"/>
+
+
+
+</LinearLayout>

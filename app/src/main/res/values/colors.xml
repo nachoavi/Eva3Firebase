@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="colorBackground">#F8F8F8</color>
+    <color name="colorActive">#4CAF50</color>
+    <color name="colorInactive">#BDBDBD</color>
+
+    <!-- Iconos de los Botones -->
+    <color name="colorIcon">#616161</color>
+    <color name="colorIconActive">#FFFFFF</color>
+    <color name="colorIconInactive">#9E9E9E</color>
+
+    <!-- Texto de los Botones -->
+    <color name="colorTextActive">#4CAF50</color>
+    <color name="colorTextInactive">#BDBDBD</color>
+    
+</resources>
