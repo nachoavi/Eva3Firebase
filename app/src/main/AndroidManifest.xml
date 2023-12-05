@@ -15,6 +15,15 @@
         android:theme="@style/Theme.Eva3Firebase"
         tools:targetApi="31">
         <activity
+            android:name=".booksCrud.SimpleListBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".genresCrud.ListGenresActivity"
+            android:exported="false" />
+        <activity
+            android:name=".genresCrud.AddGenresActivity"
+            android:exported="false" />
+        <activity
             android:name=".booksCrud.ListBookNormalUserActivity"
             android:exported="false" />
         <activity

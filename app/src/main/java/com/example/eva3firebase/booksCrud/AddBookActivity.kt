@@ -6,8 +6,8 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.eva3firebase.MainActivity
 import com.example.eva3firebase.R
+import com.example.eva3firebase.genresCrud.AddGenresActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
@@ -30,10 +30,6 @@ class AddBookActivity : AppCompatActivity() {
     private val onNavigationItemSelectedListener =
         BottomNavigationView.OnNavigationItemSelectedListener { item ->
             when (item.itemId) {
-                R.id.navigation_home -> {
-                    startActivity(Intent(this, MainActivity::class.java))
-                    return@OnNavigationItemSelectedListener true
-                }
                 R.id.navigation_listBooks -> {
                     startActivity(Intent(this, ListBookActivity2::class.java))
                     return@OnNavigationItemSelectedListener true
@@ -41,7 +37,10 @@ class AddBookActivity : AppCompatActivity() {
                 R.id.navigation_addBooks -> {
                     startActivity(Intent(this, AddBookActivity::class.java))
                     return@OnNavigationItemSelectedListener true
-                }
+                }R.id.navigation_addGenre -> {
+                startActivity(Intent(this, AddGenresActivity::class.java))
+                return@OnNavigationItemSelectedListener true
+            }
             }
             false
         }

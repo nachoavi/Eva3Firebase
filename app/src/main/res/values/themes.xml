@@ -13,6 +13,7 @@
         <item name="itemTextColor">@color/colorTextActive</item>
         <item name="itemTextAppearanceInactive">@color/colorTextInactive</item>
 
+
     </style>
     
 </resources>

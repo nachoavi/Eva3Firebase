@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.eva3firebase.MainActivity
 import com.example.eva3firebase.R
 import com.example.eva3firebase.adapters.RVBooks
+import com.example.eva3firebase.genresCrud.AddGenresActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
@@ -28,10 +29,6 @@ class ListBookActivity2 : AppCompatActivity(),RVBooks.MiListenerInterface{
     private val onNavigationItemSelectedListener =
         BottomNavigationView.OnNavigationItemSelectedListener { item ->
             when (item.itemId) {
-                R.id.navigation_home -> {
-                    startActivity(Intent(this, MainActivity::class.java))
-                    return@OnNavigationItemSelectedListener true
-                }
                 R.id.navigation_listBooks -> {
                     startActivity(Intent(this, ListBookActivity2::class.java))
                     return@OnNavigationItemSelectedListener true
@@ -40,6 +37,10 @@ class ListBookActivity2 : AppCompatActivity(),RVBooks.MiListenerInterface{
                     startActivity(Intent(this, AddBookActivity::class.java))
                     return@OnNavigationItemSelectedListener true
                 }
+                R.id.navigation_addGenre -> {
+                    startActivity(Intent(this, AddGenresActivity::class.java))
+                    return@OnNavigationItemSelectedListener true
+            }
             }
             false
         }
@@ -56,7 +57,6 @@ class ListBookActivity2 : AppCompatActivity(),RVBooks.MiListenerInterface{
         rvBooks = findViewById(R.id.rvBooks)
 
         val onCreateThis = this
-
 
         val navView: BottomNavigationView = findViewById(R.id.bottom_navigation)
         navView.setOnNavigationItemSelectedListener(onNavigationItemSelectedListener)

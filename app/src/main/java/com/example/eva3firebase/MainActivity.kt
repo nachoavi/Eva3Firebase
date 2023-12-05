@@ -6,8 +6,8 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.eva3firebase.booksCrud.AddBookActivity
 import com.example.eva3firebase.booksCrud.ListBookActivity2
+import com.example.eva3firebase.booksCrud.SimpleListBookActivity
 import com.example.eva3firebase.registerUser.RegisterUserActivity
 import com.example.eva3firebase.registerUser.Users
 import com.google.firebase.database.DataSnapshot
@@ -47,8 +47,8 @@ class MainActivity : AppCompatActivity() {
         btnLogin.setOnClickListener{
             val username = editTextUsername.text.toString()
             val password = editTextPassword.text.toString()
-            val intentAdmin = Intent(this, AddBookActivity::class.java)
-            val intentNormal = Intent(this,ListBookActivity2::class.java)
+            val intentAdmin = Intent(this, ListBookActivity2::class.java)
+            val intentNormal = Intent(this,SimpleListBookActivity::class.java)
             loginUser(username,password,intentAdmin,intentNormal)
         }
 

@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/navigation_home"
-        android:title="Inicio"
-        android:icon="@android:drawable/ic_menu_myplaces"/>
-    <item
         android:id="@+id/navigation_listBooks"
         android:title="Libros"
         android:icon="@android:drawable/ic_input_get"/>
@@ -12,4 +8,8 @@
         android:id="@+id/navigation_addBooks"
         android:title="Ingresar libros"
         android:icon="@android:drawable/ic_input_add"/>
+    <item
+        android:id="@+id/navigation_addGenre"
+        android:title="Generos"
+        android:icon="@android:drawable/ic_menu_upload"/>
 </menu>
